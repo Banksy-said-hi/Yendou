@@ -25,7 +25,9 @@ export const Toaster = () => {
           <Toast.Root
             width={{ md: "sm" }}
             borderRadius="lg"
-            bg="radial-gradient(53.57% 282.15% at 2.14% 50%, rgba(116, 200, 152, 0.20) 0%, rgba(116, 200, 152, 0.18) 50%, rgba(116, 200, 152, 0.05) 100%), #46474F"
+            border="2px solid"
+            borderImageSource="radial-gradient(53.57% 282.15% at 2.14% 50%, rgba(116, 200, 152, 0.65) 0%, rgba(116, 200, 152, 0.1) 100%)"
+            bg="radial-gradient(53.57% 282.15% at 2.14% 50%, rgba(116, 200, 152, 0.25) 0%, rgba(116, 200, 152, 0.15) 50%, rgba(116, 200, 152, 0.03) 100%), #46474F"
           >
             {toast.type === "loading" ? (
               <Spinner size="sm" color="blue.solid" />
